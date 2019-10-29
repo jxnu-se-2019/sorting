@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jianglinhai\" />
+    <Folder Include="Jiangtao\" />
+    <Folder Include="Wuqi\" />
+    <Folder Include="Xuqiao\" />
+    <Folder Include="Yuyazhi\" />
+    <Folder Include="Lizhibin\" />
+  </ItemGroup>
+</Project>
