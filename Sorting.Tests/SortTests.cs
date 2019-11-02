@@ -43,7 +43,7 @@ namespace Sorting.Tests
         {
             foreach(var sorter in _sorters)
             {
-                var typeName = _sorters.GetType().FullName;
+                var typeName = sorter.GetType().FullName;
                 Console.WriteLine($"Testing {typeName}: ");
 
                 TestA_ThrowNullException(sorter);
