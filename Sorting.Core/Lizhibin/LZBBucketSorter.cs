@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Sorting.Core.Lizhibin
 {
-    class LZBBucketSortet : SorterBase
+    public class LZBBucketSortet : SorterBase
     {
         public override void Sort(int[] input)
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException();
             }
             int i, j;
             int[] count = new int[100];

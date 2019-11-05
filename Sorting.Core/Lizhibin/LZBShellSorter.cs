@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Sorting.Core.Lizhibin
 {
-    class LZBShellSorter : SorterBase
+    public class LZBShellSorter : SorterBase
     {
         public override void Sort(int[] input)
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException();
             }
             int number = input.Length / 2;
             int i;

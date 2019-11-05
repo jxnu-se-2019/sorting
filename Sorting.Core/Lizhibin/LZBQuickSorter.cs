@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Sorting.Core.Lizhibin
 {
-    class LZBQuickSorter : SorterBase
+    public class LZBQuickSorter : SorterBase
     {
         public override void Sort(int[] input)
         {
             if(input == null)
             {
-                return;
+                throw new ArgumentNullException ();
             }
             void quick_sort(int[] a, int left, int right)
             {
