@@ -6,27 +6,27 @@ namespace Sorting.Core.Jiangtao
 {
     public class HYTSelectionSort:SorterBase
     {
-        public override void Sort(int[] dataArray)
+        public override void Sort(int[] input)
         {
-            if (dataArray == null)
+            if (input == null)
             {
                 throw new ArgumentNullException();
             }
-            for (int i = 0; i < dataArray.Length - 1; i++)
+            for (int i = 0; i < input.Length - 1; i++)
             {
                 int minIndex = i;
-                for (int j = i + 1; j < dataArray.Length; j++)
+                for (int j = i + 1; j < input.Length; j++)
                 {
-                    if (dataArray[j] < dataArray[minIndex])
+                    if (input[j] < input[minIndex])
                     {
                         minIndex = j;
                     }
                 }
                 if (minIndex != i)
                 {
-                    int temp = dataArray[i];
-                    dataArray[i] = dataArray[minIndex];
-                    dataArray[minIndex] = temp;
+                    int temp = input[i];
+                    input[i] = input[minIndex];
+                    input[minIndex] = temp;
                 }
             }
         }

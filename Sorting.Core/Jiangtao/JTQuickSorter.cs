@@ -14,7 +14,6 @@ namespace Sorting.Core.Jiangtao
             }
             Sort(input, 0, input.Length - 1);
         }
-
         private void Sort(int[] input, int a1, int a2)
         {
             if (a1 >= a2)
@@ -25,7 +24,6 @@ namespace Sorting.Core.Jiangtao
             Sort(input, a1, j - 1);
             Sort(input, j + 1, a2);
         }
-
         private static int Partition(int[] input, int a1, int a2)
         {
             int i = a1;
