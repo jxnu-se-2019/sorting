@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Class1.cs" />
+    <Folder Include="Jianglinhai\" />
+    <Folder Include="Jiangtao\" />
+    <Folder Include="Wuqi\" />
+    <Folder Include="Yuyazhi\" />
+    <Folder Include="Lizhibin\" />
   </ItemGroup>
 </Project>
