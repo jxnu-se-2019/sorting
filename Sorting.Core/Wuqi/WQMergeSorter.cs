@@ -11,9 +11,9 @@ namespace Sorting.Core.Wuqi
             {
                 throw new ArgumentNullException();
             }
-            mergeSort(input, 0, input.Length - 1);
+            MergeSort(input, 0, input.Length - 1);
         }
-        static void merge(int[] a, int low, int mid, int high)
+        private static void Merge(int[] a, int low, int mid, int high)
         {
             int N = high - low + 1;
             int[] b = new int[N];
@@ -27,14 +27,14 @@ namespace Sorting.Core.Wuqi
             for (int k = 0; k < N; k++)
                 a[low + k] = b[k];
         }
-        static void mergeSort(int[] a, int low, int high)
+        private static void MergeSort(int[] a, int low, int high)
         {
             if (low < high)
             {
                 int mid = (low + high) / 2;
-                mergeSort(a, low, mid);
-                mergeSort(a, mid + 1, high);
-                merge(a, low, mid, high);
+                MergeSort(a, low, mid);
+                MergeSort(a, mid + 1, high);
+                Merge(a, low, mid, high);
             }
         }
     }
