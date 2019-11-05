@@ -10,10 +10,9 @@ namespace Sorting.Core.Jiangtao
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException("input is empty");
             }
             Sort(input, 0, input.Length - 1);
-
         }
 
         private void Sort(int[] input, int a1, int a2)
@@ -22,7 +21,6 @@ namespace Sorting.Core.Jiangtao
             {
                 return;
             }
-
             int j = Partition(input, a1, a2);
             Sort(input, a1, j - 1);
             Sort(input, j + 1, a2);
@@ -43,7 +41,6 @@ namespace Sorting.Core.Jiangtao
                         break;
                     }
                 }
-
                 while (v < input[--j])
                 {
                     if (j == a1)
@@ -51,17 +48,14 @@ namespace Sorting.Core.Jiangtao
                         break;
                     }
                 }
-
                 if (i >= j)
                 {
                     break;
                 }
-
                 temp = input[i];
                 input[i] = input[j];
                 input[j] = temp;
             }
-
             temp = 0;
             temp = input[a1];
             input[a1] = input[j];

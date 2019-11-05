@@ -10,11 +10,10 @@ namespace Sorting.Core.Jiangtao
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException("input is empty");
             }
             for (int i = 0; i < input.Length - 1; i++)
             {
-
                 for (int j = 0; j < input.Length - i - 1; j++)
                 {
                     int temp = 0;
