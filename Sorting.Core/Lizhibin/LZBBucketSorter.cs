@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sorting.Core.Lizhibin
 {
-    public class LZBBucketSortet : SorterBase
+    public class LZBBucketSorter : SorterBase
     {
         public override void Sort(int[] input)
         {

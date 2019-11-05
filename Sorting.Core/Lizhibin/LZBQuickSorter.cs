@@ -12,22 +12,23 @@ namespace Sorting.Core.Lizhibin
             {
                 throw new ArgumentNullException ();
             }
-            void quick_sort(int[] a, int left, int right)
+            QuickSort(input, 0, input.Length);
+        }
+
+        private static void QuickSort(int[] a, int left, int right)
+        {
+            int i = left, j = right - 1, key;
+            if (i >= j) return;
+            for (key = a[i]; i < j;)
             {
-                int i = left, j = right - 1, key;
-                if (i >= j) return;
-                for (key = a[i]; i < j;)
-                {
-                    for (; i < j && a[j] >= key; --j) ;
-                    a[i] = a[j];
-                    for (; i < j && a[i] <= key; ++i) ;
-                    a[j] = a[i];
-                }
-                a[i] = key;
-                quick_sort(a, left, i);
-                quick_sort(a, i + 1, right);
+                for (; i < j && a[j] >= key; --j) ;
+                a[i] = a[j];
+                for (; i < j && a[i] <= key; ++i) ;
+                a[j] = a[i];
             }
-            quick_sort(input, 0, input.Length);
+            a[i] = key;
+            QuickSort(a, left, i);
+            QuickSort(a, i + 1, right);
         }
     }
 }
