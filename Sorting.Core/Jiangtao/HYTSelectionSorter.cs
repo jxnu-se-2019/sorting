@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sorting.Core.Jiangtao
 {
-    public class HYTSelectionSort:SorterBase
+    public class HYTSelectionSorter:SorterBase
     {
         public override void Sort(int[] input)
         {
