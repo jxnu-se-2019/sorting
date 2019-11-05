@@ -6,8 +6,12 @@ namespace Sorting.Core.Jiangtao
 {
     public class HYTQuickSort:SorterBase
     {
-        public static void Sort(int[] numbers)
+        public override void Sort(int[] numbers)
         {
+            if (numbers == null)
+            {
+                throw new ArgumentNullException();
+            }
             QuickSort(numbers, 0, numbers.Length - 1);
         }
         private static void QuickSort(int[] numbers, int left, int right)

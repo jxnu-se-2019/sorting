@@ -6,8 +6,12 @@ namespace Sorting.Core.Jiangtao
 {
     public class HYTSelectionSort:SorterBase
     {
-        static void SelectSort(int[] dataArray)
+        public override void Sort(int[] dataArray)
         {
+            if (dataArray == null)
+            {
+                throw new ArgumentNullException();
+            }
             for (int i = 0; i < dataArray.Length - 1; i++)
             {
                 int minIndex = i;
