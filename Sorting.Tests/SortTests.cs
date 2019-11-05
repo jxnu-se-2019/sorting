@@ -41,12 +41,13 @@ namespace Sorting.Tests
         [Test]
         public void TestAll()
         {
+            Console.WriteLine($"{_sorters.Count} in total");
             foreach(var sorter in _sorters)
             {
                 var typeName = sorter.GetType().FullName;
                 Console.WriteLine($"Testing {typeName}: ");
 
-               // TestA_ThrowNullException(sorter);
+               TestA_ThrowNullException(sorter);
 
                 foreach(var input in _inputs)
                 {
