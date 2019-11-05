@@ -10,11 +10,11 @@
   <ItemGroup>
     <Folder Include="Jianglinhai\" />
     <Folder Include="Jiangtao\" />
-<<<<<<< HEAD
+
     <Folder Include="Xuqiao\" />
-=======
+
     <Folder Include="Wuqi\" />
->>>>>>> 7ab2862edfa82565f7a9c28bbe79b92dff60e223
+
     <Folder Include="Yuyazhi\" />
     <Folder Include="Lizhibin\" />
   </ItemGroup>
