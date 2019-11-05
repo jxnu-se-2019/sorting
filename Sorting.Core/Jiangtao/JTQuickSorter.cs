@@ -10,7 +10,7 @@ namespace Sorting.Core.Jiangtao
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException("input is empty");
             }
             Sort(input, 0, input.Length - 1);
 
