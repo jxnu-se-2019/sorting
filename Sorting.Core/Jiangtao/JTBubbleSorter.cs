@@ -14,7 +14,6 @@ namespace Sorting.Core.Jiangtao
             }
             for (int i = 0; i < input.Length - 1; i++)
             {
-
                 for (int j = 0; j < input.Length - i - 1; j++)
                 {
                     int temp = 0;
