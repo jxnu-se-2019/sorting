@@ -32,8 +32,6 @@ namespace Sorting.Core.Jianglinhai
                 Console.WriteLine();
                 return high;
             }
-
-
             static void sort(int[] array, int low, int high)
             {
                 if (low >= high)
@@ -43,9 +41,6 @@ namespace Sorting.Core.Jianglinhai
                 sort(array, index + 1, high);
             }
         }
-
-
-
     }
 }
 
