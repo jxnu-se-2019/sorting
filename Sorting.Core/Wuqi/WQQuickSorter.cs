@@ -12,9 +12,9 @@ namespace Sorting.Core.Wuqi
             {
                 throw new ArgumentNullException();
             }
-            quickSort(0, input.Length, input);
+            QuickSort(0, input.Length, input);
         }
-        static void quickSort(int bgn, int end, params int[] arr)
+        private static void QuickSort(int bgn, int end, params int[] arr)
         {
             if (bgn >= end - 1)
                 return;
@@ -43,8 +43,8 @@ namespace Sorting.Core.Wuqi
                 }
             }
             arr[lindex] = std;
-            quickSort(bgn, lindex, arr);
-            quickSort(rindex + 1, end, arr);
+            QuickSort(bgn, lindex, arr);
+            QuickSort(rindex + 1, end, arr);
         }
     }
 }
