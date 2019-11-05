@@ -46,7 +46,7 @@ namespace Sorting.Tests
                 var typeName = sorter.GetType().FullName;
                 Console.WriteLine($"Testing {typeName}: ");
 
-                TestA_ThrowNullException(sorter);
+               // TestA_ThrowNullException(sorter);
 
                 foreach(var input in _inputs)
                 {
