@@ -61,7 +61,7 @@ namespace Sorting.Tests
             try
             {
                 sorter.Sort(null);
-                Assert.IsNotEmpty("Should throw ArgumentNullException");
+                Assert.IsEmpty("Should throw ArgumentNullException");
             }
             catch (Exception ex)
             {
