@@ -4,19 +4,18 @@ using System.Text;
 
 namespace Sorting.Core.Wuqi
 {
-    class WQQuickSorter : SorterBase
+    public class WQQuickSorter : SorterBase
     {
         public override void Sort(int[] input)
         {
             if (input == null)
             {
-                return;
+                throw new ArgumentNullException();
             }
             quickSort(0, input.Length, input);
         }
         static void quickSort(int bgn, int end, params int[] arr)
         {
-
             if (bgn >= end - 1)
                 return;
             int lindex = bgn;
@@ -32,9 +31,7 @@ namespace Sorting.Core.Wuqi
                         break;
                     }
                     --rindex;
-
                 }
-
                 while (lindex < rindex)
                 {
                     if (arr[lindex] >= std)
@@ -43,9 +40,7 @@ namespace Sorting.Core.Wuqi
                         break;
                     }
                     ++lindex;
-
                 }
-
             }
             arr[lindex] = std;
             quickSort(bgn, lindex, arr);
