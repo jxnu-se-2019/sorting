@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sorting.Core.Jiangtao
 {
-    public class HYTQuickSorter:SorterBase
+    public class HYTQuickSorter : SorterBase
     {
         public override void Sort(int[] input)
         {
@@ -24,15 +24,11 @@ namespace Sorting.Core.Jiangtao
                 while (true)
                 {
                     while (numbers[++i] < middle) ;
-
                     while (numbers[--j] > middle) ;
-
                     if (i >= j)
                         break;
-
                     Swap(numbers, i, j);
                 }
-
                 QuickSort(numbers, left, i - 1);
                 QuickSort(numbers, j + 1, right);
             }
