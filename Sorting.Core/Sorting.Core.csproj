@@ -24,6 +24,5 @@
     <Folder Include="Jiangtao\" />
     <Folder Include="Wuqi\" />
     <Folder Include="Yuyazhi\" />
-    <Folder Include="Lizhibin\" />
   </ItemGroup>
 </Project>
