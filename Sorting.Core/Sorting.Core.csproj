@@ -13,8 +13,6 @@
 
     <Folder Include="Xuqiao\" />
 
-    <Folder Include="Wuqi\" />
-
     <Folder Include="Yuyazhi\" />
     <Folder Include="Lizhibin\" />
   </ItemGroup>
