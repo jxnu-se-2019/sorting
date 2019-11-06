@@ -10,7 +10,7 @@ namespace Sorting.Core.Jiangtao
         {
             if (input == null)
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException(nameof(input));
             }
             QuickSort(input, 0, input.Length - 1);
         }
