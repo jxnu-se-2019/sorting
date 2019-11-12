@@ -1,12 +1,14 @@
 ## Groups
 6 groups, 11 members, Quick Sort is required for everyone.
 
-- Jianglinhai, Liutian: Insertion, Shell
-- Jiangtao, Huyanting: Selection, Bubble
+- Jianglinhai, Jiangtao: Shell, Selection
 - Wuqi, Wenyicong: Merge, Selection
-- Xuqiao, Wujiamin: Heap, Bubble
+- Xuqiao, Yuyazhi: Heap, Bucket
 - Lizhibin, Xiaxue: Bucket, Shell
-- Yuyazhi: Bucket
+- ~~Yuyazhi: Bucket~~
+- ~~Xuqiao, Wujiamin: Heap, Bubble~~
+- ~~Jianglinhai, Liutian: Insertion, Shell~~
+- ~~Jiangtao, Huyanting: Selection, Bubble~~
 
 ## Tasks
 - Create a new branch named with group owner
